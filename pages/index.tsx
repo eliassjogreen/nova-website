@@ -20,28 +20,25 @@ function Index() {
       <h1>Welcome!</h1>
       <p>
         Nova is a JavaScript (<a href="https://tc39.es/ecma262/">ECMAScript</a>)
-        and <a href="https://webassembly.org/">WebAssembly</a>{" "}
+        (and in the future <a href="https://webassembly.org/">WebAssembly</a> )
         engine written in Rust and following{" "}
         <a href="https://en.wikipedia.org/wiki/Data-oriented_design">
           data-oriented design principles
         </a>
-        . It is currently nothing more than a fun experiment to learn and to
-        prove the viability of such an engine, but may very well become
-        something much more in the future.
+        . The engine is published on crates.io with SemVer versioning without
+        particular LTS guarantees.
       </p>
       <p>
-        The engine is still very limited in it's capabilities only passing about
-        {" "}
+        The engine currently passes about{" "}
         <a href={href(import.meta.resolve("./test262.tsx"))}>
           {((metrics.results.pass / metrics.total) * 100).toFixed()}% of the
-          test262 test suite
+          Test262 test suite
         </a>
-        . However development is ongoing and we are quickly improving the
-        engine. If you are interested in the project, please check out the{" "}
-        <a href="https://github.com/trynova/nova">GitHub repository</a>{" "}
-        and or join our{" "}
-        <a href="https://discord.gg/bwY4TRB8J7">Discord server</a>{" "}
-        where the core team resides and where we discuss development.
+        and is considered ready for small-scale deployment. If you are
+        interested in the project, please check out the{" "}
+        <a href="https://github.com/trynova/nova">GitHub repository</a> and or
+        join our <a href="https://trynova.zulipchat.com">Zulip chat</a> where
+        the core team resides and where we discuss development.
       </p>
       <section>
         <h2>Latest Blog Posts</h2>
